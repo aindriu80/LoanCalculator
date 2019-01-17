@@ -16,9 +16,100 @@
       crossorigin="anonymous"
     />
 
-    <title>Hello, world!</title>
+    <title>Loan Calculator in JavaScript</title>
   </head>
-  <body>
+  <body class="bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <div class="card card-body text-center mt-5">
+            <h1 class="heading display-5 pb-3">Loan Calculator</h1>
+            <form class="loan-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-text">€</span>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="amount"
+                    placeholder="Loan Amount"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-text">%</span>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="interest"
+                    placeholder="Interest"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="years"
+                  placeholder="Years To Repay"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="submit"
+                  value="Calculate"
+                  class="btn btn-dark btn-dark btn-block"
+                />
+              </div>
+            </form>
+            <!-- Loader Here-->
+            <!-- <div id="loading"><img src="img/loading.gif" alt="loading" /></div> -->
+
+            <!-- Results-->
+            <div class="results" class="pt-4">
+              <h5>Results</h5>
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-text">Monthly Payment</span>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="montly-payment"
+                    disabled
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-text">Total Payment</span>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="total-payment"
+                    disabled
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-text">Total Interest</span>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="total-interest"
+                    disabled
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
@@ -36,5 +127,6 @@
       integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
       crossorigin="anonymous"
     ></script>
+    <script src="app.js"></script>
   </body>
 </html>
